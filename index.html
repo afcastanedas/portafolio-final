@@ -177,35 +177,63 @@
     </section>
 
     <section id="contacto" class="section section--footer">
-      <div class="wrap">
-        <div class="section__head">
-          <h2>Contacto</h2>
-          <p class="muted">Listo para colaborar. Escríbeme y lo armamos.</p>
-        </div>
-        
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Contacto</h2>
+      <p class="muted">Listo para colaborar. Escríbeme y lo armamos.</p>
+    </div>
 
-        <div class="grid-3">
-          <div class="card contact">
-            <h3>Correo</h3>
-            <p class="muted">acastanedas@outlook.com</p>
-          </div>
-
-          <div class="card contact">
-            <h3>Ciudad</h3>
-            <p class="muted">Bogotá D.C.</p>
-          </div>
-
-          <div class="card contact">
-            <h3>Dirección</h3>
-            <p class="muted">Cra 114 #33-22</p>
-          </div>
-        </div>
-
-        <footer class="footer">
-          <p class="muted">© 2026 Andrés Castañeda — Portafolio</p>
-        </footer>
+    <div class="grid-3">
+      <div class="card contact">
+        <h3>Correo</h3>
+        <p class="muted">acastanedas@outlook.com</p>
       </div>
-    </section>
+
+      <div class="card contact">
+        <h3>Ciudad</h3>
+        <p class="muted">Bogotá D.C.</p>
+      </div>
+
+      <div class="card contact">
+        <h3>Dirección</h3>
+        <p class="muted">Cra 114 #33-22</p>
+      </div>
+    </div>
+
+    <div class="contacto__formulario card">
+      <h3>Envíame un mensaje</h3>
+      <p class="muted">Este formulario es visual y no envía información todavía.</p>
+
+      <form class="formulario-contacto">
+        <div class="formulario__grupo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+        </div>
+
+        <div class="formulario__grupo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Escribe tu correo">
+        </div>
+
+        <div class="formulario__grupo">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" placeholder="Escribe el asunto">
+        </div>
+
+        <div class="formulario__grupo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+        </div>
+
+        <button type="button" class="btn btn--primary">Enviar mensaje</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p class="muted">© 2026 Andrés Castañeda — Portafolio</p>
+    </footer>
+  </div>
+</section>
 
   </main>
 

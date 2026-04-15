@@ -231,3 +231,47 @@ a{
   margin-top: 22px;
   text-align: center;
 }
+
+.contacto__formulario{
+  margin-top: 24px;
+}
+
+.contacto__formulario h3{
+  margin-bottom: 8px;
+}
+
+.formulario-contacto{
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formulario__grupo{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formulario__grupo label{
+  font-weight: bold;
+}
+
+.formulario__grupo input,
+.formulario__grupo textarea{
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--negro);
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: Arial, helvetica, sans-serif;
+}
+
+.formulario__grupo textarea{
+  resize:vertical;
+  min-height: 120px;
+}
+
+.contacto__formulario .btn{
+  align-self: flex-start;
+}
