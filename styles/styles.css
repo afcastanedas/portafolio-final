@@ -171,7 +171,6 @@ a{
 .grid-3{
   display: grid;
   gap: 16px;
-  grid-template-columns: 1fr;
   margin-top: 16px;
 }
 
@@ -180,6 +179,8 @@ a{
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+
 
 .stats{
   display: grid;

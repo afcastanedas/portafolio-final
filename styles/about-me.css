@@ -171,7 +171,6 @@ a{
 .grid-3{
   display: grid;
   gap: 16px;
-  grid-template-columns: 1fr;
   margin-top: 16px;
 }
 
@@ -179,6 +178,22 @@ a{
   .grid-3{
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.study {
+  max-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.study__year, .study p, .study h3 {
+  width: 100%;
+}
+
+.study img {
+  margin-top: 2vw;
+  width: 8vw;
 }
 
 .stats{
