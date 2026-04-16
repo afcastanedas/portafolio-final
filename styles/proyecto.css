@@ -485,3 +485,168 @@ a{
   font-size: 12px;
   opacity: 0.75;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+.brand,
+.nav a,
+.btn,
+.card,
+.shot,
+.shot img,
+.hero__img,
+.tag,
+.details,
+.details__summary,
+.cta,
+.footer{
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.brand:hover{
+  transform: scale(1.03);
+}
+
+.nav a:hover{
+  transform: translateY(-2px);
+}
+
+.btn:hover{
+  transform: translateY(-3px);
+}
+
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 8px 8px 0 var(--negro);
+}
+
+.section--dark .card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(255,255,255,0.08);
+}
+
+.hero__media{
+  animation: aparecerArriba 0.9s ease both;
+}
+
+.hero__content{
+  animation: aparecerAbajo 0.9s ease 0.2s both;
+}
+
+.hero__img{
+  animation: flotar 4s ease-in-out infinite;
+}
+
+.hero__kicker{
+  animation: latido 2.2s ease-in-out infinite;
+}
+
+.tag:hover{
+  transform: scale(1.06);
+}
+
+.shot{
+  overflow: hidden;
+}
+
+.shot:hover{
+  transform: translateY(-5px);
+}
+
+.shot:hover img{
+  transform: scale(1.05);
+}
+
+.details:hover{
+  transform: translateY(-3px);
+}
+
+.details[open]{
+  animation: abrirDetails 0.35s ease;
+}
+
+.details__summary:hover{
+  padding-left: 18px;
+}
+
+.cta{
+  animation: aparecerAbajo 1s ease both;
+}
+
+.footer__inner{
+  animation: aparecerAbajo 1s ease 0.2s both;
+}
+
+.reveal{
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header.scrolled{
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+@keyframes aparecerArriba{
+  from{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aparecerAbajo{
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flotar{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes latido{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes abrirDetails{
+  from{
+    opacity: 0.7;
+    transform: translateY(8px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
