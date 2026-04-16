@@ -180,20 +180,24 @@ a{
   }
 }
 
-.study {
-  max-width: 30vw;
+.study{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
-.study__year, .study p, .study h3 {
-  width: 100%;
-}
-
-.study img {
+.study .img__cont{
   margin-top: 2vw;
-  width: 8vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.study img{
+  width: 25%;
+  display: block;
 }
 
 .stats{
@@ -282,4 +286,126 @@ a{
 .tool h3{
   font-size: 18px;
   margin-bottom: 6px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.logo,
+.menu a,
+.btn,
+.card,
+.study img,
+.tool__logo img,
+.hero__image img{
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover{
+  transform: scale(1.03);
+}
+
+.menu a:hover{
+  transform: translateY(-2px);
+}
+
+.btn:hover{
+  transform: translateY(-3px);
+}
+
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 8px 8px 0 var(--negro);
+}
+
+.study:hover img,
+.tool:hover .tool__logo img{
+  transform: scale(1.08) rotate(3deg);
+}
+
+.hero__text{
+  animation: entrarIzquierda 0.9s ease both;
+}
+
+.hero__image{
+  animation: entrarDerecha 0.9s ease 0.2s both;
+}
+
+.badge{
+  animation: latido 2.2s ease-in-out infinite;
+}
+
+.hero__image img{
+  animation: flotar 4s ease-in-out infinite;
+}
+
+.reveal{
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.workflow__number,
+.study__year{
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.workflow:hover .workflow__number,
+.study:hover .study__year{
+  transform: scale(1.12);
+}
+
+@keyframes entrarIzquierda{
+  from{
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes entrarDerecha{
+  from{
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes flotar{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes latido{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
