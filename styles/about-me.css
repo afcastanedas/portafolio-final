@@ -171,7 +171,6 @@ a{
 .grid-3{
   display: grid;
   gap: 16px;
-  grid-template-columns: 1fr;
   margin-top: 16px;
 }
 
@@ -179,6 +178,22 @@ a{
   .grid-3{
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.study {
+  max-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.study__year, .study p, .study h3 {
+  width: 100%;
+}
+
+.study img {
+  margin-top: 2vw;
+  width: 8vw;
 }
 
 .stats{
@@ -223,4 +238,48 @@ a{
 .footer{
   margin-top: 22px;
   text-align: center;
+}
+
+.tools-grid{
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  margin-top: 16px;
+}
+
+@media (min-width: 700px){
+  .tools-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px){
+  .tools-grid{
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.tool{
+  text-align: center;
+}
+
+.tool__logo{
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool__logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.tool h3{
+  font-size: 18px;
+  margin-bottom: 6px;
 }
