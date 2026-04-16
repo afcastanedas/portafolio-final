@@ -269,7 +269,7 @@ a{
 @media (min-width: 900px){
   .grid--2{
     grid-template-columns: 1fr 1fr;
-    align-items: start;
+    align-items: baseline;
   }
 
   .grid--3{
