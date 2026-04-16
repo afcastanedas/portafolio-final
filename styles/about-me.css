@@ -180,23 +180,24 @@ a{
   }
 }
 
-.study {
-  max-width: 30vw;
+.study{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
-.study .img__cont {
+.study .img__cont{
   margin-top: 2vw;
   width: 100%;
   display: flex;
   justify-content: center;
-
 }
 
-.study img {
-  width: 50%;
+.study img{
+  width: 25%;
+  display: block;
 }
 
 .stats{
